@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer utilities {
+    .select__input .ant-select-selector {
+        // border-2 border-primary-200 rounded-xl p-2 bg-gray-50 focus-within:outline-none w-full px-3
+        border: 0px !important;        
+        background-color: transparent !important;
+    }
+    .select__input .ant-select-selector:focus-visible, .select__input .ant-select-selector:focus-within {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
